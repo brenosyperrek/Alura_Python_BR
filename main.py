@@ -1,7 +1,7 @@
-from cpf_cnpj import Documento
+import re
 
-
-numero_cnpj = '35379838000112'
-numero_cpf = '90219899991'
-documento = Documento.cria_documento(numero_cnpj)
-print (documento)
+padrao = '[0-9][a-z][0-9]'
+texto = "123 1a2 1cc aa1"
+resposta = re.search(padrao,texto)
+print(resposta)
+print (resposta.group())
