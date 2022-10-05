@@ -1,4 +1,4 @@
-from Cpf import Cpf
+from cpf_cnpj import CpfCnpj
 
-um_cpf = Cpf('01837345996')
-print (um_cpf)
+documento = CpfCnpj ('35379838000112', 'cnpj')
+print (documento)
