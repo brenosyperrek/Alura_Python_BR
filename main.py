@@ -5,5 +5,6 @@ cadastro = DatasBr()
 print(cadastro.momento_cadastro)
 print(cadastro.mes_cadastro())
 print(cadastro.dia_semana())
-
+print(cadastro)
+print (cadastro.tempo_cadastro())
 
