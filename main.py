@@ -1,9 +1,9 @@
-from telefones_br import TelefoneBr
+from datas import DatasBr
 
-telefone = '554891045651'
+cadastro = DatasBr()
 
-meu_telefone = TelefoneBr(telefone)
-
-print(meu_telefone)
+print(cadastro.momento_cadastro)
+print(cadastro.mes_cadastro())
+print(cadastro.dia_semana())
 
 
