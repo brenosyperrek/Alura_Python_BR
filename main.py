@@ -1,10 +1,12 @@
-from datas import DatasBr
+from acesso_cep import BuscaEndereco
+import requests
 
-cadastro = DatasBr()
+cep = 88030500
 
-print(cadastro.momento_cadastro)
-print(cadastro.mes_cadastro())
-print(cadastro.dia_semana())
-print(cadastro)
-print (cadastro.tempo_cadastro())
+objeto_cep = BuscaEndereco(cep)
+print(objeto_cep)
 
+bairro, cidade, estado = objeto_cep.acessa_via_cep()
+print(bairro)
+print(cidade)
+print(estado)
